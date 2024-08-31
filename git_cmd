@@ -1,3 +1,7 @@
-// .git 디렉토리 생성
+$git init  // .git 디렉토리 생성
 
-$git init  
+$git status // 상태 표시
+
+$git add <file_name> // staging
+
+$git log  // 확인
