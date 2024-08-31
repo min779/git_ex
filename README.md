@@ -14,4 +14,6 @@ $rm -r <dir_name>  // 하위 디렉토리까지 삭제
 
 // git 명령어
 
+$git init  // .git 디렉토리 생성 
+
 
