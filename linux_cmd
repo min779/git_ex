@@ -37,3 +37,15 @@ $rm -v // --verbose
 $rm -f // --force, 존재하지 않는 파일은 확인 없이 무시
 
 $rm -r // --recursive, 하위 dir 도 함께 삭제, dir 을 완전히 삭제
+
+$less <file>  // 파일의 내용을 확인
+
+// ls 명령어 옵션
+
+$ls -a // --all, 
+$ls -d // --directory
+$ls -h // --human-readable, 파일 크기를 읽기 좋게 출력
+$ls -l //
+$ls -r // --reverse, 역순 출력
+$ls -s // 파일 크기 순
+$ls -t // 파일 수정 시간 순
