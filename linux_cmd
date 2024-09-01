@@ -1,1 +1,15 @@
 $rm -r <dir_name>  // 하위 디렉토리까지 삭제
+
+$mkdir // produce dir
+
+$cp <file or dir name> <file2 of dir2 name>  // 복사
+
+$cp -a // 또는 --archive, 속성도 같이 복사
+
+$cp -i // 또는 --interactive, 기존 파일을 확인하고 덮어쓴다
+
+$cp -r // 또는 --recursive, 디렉토리 속 내용도 함께 복사
+
+$cp -u // 또는 --update, 디렉토리 복사할 때, 두 디렉토리를 비교하여 다른 부분만 복사할
+
+$cp -v // 또는 --verbose, 완료 메시지 풀력
