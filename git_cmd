@@ -1,14 +1,8 @@
-$git init  // .git 디렉토리 생성
+// 환경 설정
 
-$git status // 상태 표시
+$git config user.name <name> // 개별 저장소마다 달리
 
-$git add <file_name> // staging
-
-$git log  // 확인
-
-$git config user.name <name> // 개별 저장소만
-
-$git config user.email <e-mail> // 개별 저장소만
+$git config user.email <e-mail> // 개별 저장소마다 달리
 
 $git config --unset user.name
 
@@ -23,3 +17,44 @@ $git config --global user.email <e-mail> // 모든 곳에
 $git config --unset --global user.email // 설정 삭제
 
 $cat ~/.gitconfig // 설정 확인
+
+// stage 영역
+
+$git ls-files --stage // stage 에 있는 파일들 출력
+
+$git init  // .git 디렉토리 생성
+
+$git status // 상태 표시
+
+$git add <file_name> // staging
+
+$git log  // 확인
+
+// 용어 정리
+
+- tracked : 파일이 작업 디렉트리 영역에서 stage 영역으로 add 명령으로 움겨가면 tracked 상태
+
+- unstage : stage 에 있는 파일을 working zone에서 변경을 하면 파일은 unstage 상태, working zone에서의 관점
+
+- modified : 위 unstage 상태를 stage zon 관점에서 부르는 말
+
+- unmodified : 파일이 stage zone과 working zone에서 같다. 즉 파일을 staging 후 working zone에서 한 번도 수정하지 않은 상태
+
+// 깃 허버 리파지토리 복사하기
+
+$git clone https://github.com/min779/get_ex
+
+// 파일 등록 취소 - stage 캐시 목록에서 파일이 삭제됨
+
+$git rm --cached <file_name>
+
+
+// commit 이후 파일은 reset 으로 삭제
+
+$git rm --cached <file_name>
+$git reset HEAD <file_name>
+
+
+// 파일 이름 변경 - 자동으로 git이 변경된 이름으로 추적함.:
+$git mv <file_1> <file_2>
+
